@@ -1,6 +1,16 @@
+header{
+    display: flex;
+    justify-content: center;
+    color: rgb(0, 45, 85);
+    font-size: large;
+    
+}
+
 body{
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
     background-color: #E8F1F2;
     background-image: url(../1200x675.jpg);
     background-size: cover;
@@ -30,23 +40,12 @@ h2{
 
 a{
     text-decoration: none;
-    color: #964b00;
+    color: #FFFFFF;
 }
 
 ul{
-    height: 100%;
     list-style: none;
-    font-size: 20px;
-    padding: 20px 4%;
-    line-height: 40px;
-}
-
-ul li a .text{
-    margin-left: 70px;
-}
-
-ul li a .icon > i{
-    font-size: 30px;
+    display: flex;
 }
 
 li{
@@ -62,8 +61,6 @@ h1{
 
 main{
     background-color: rgba(0, 0, 0, 0.6);
-    align-items: center;
-    justify-content: center;
 }
 
 figcaption{
@@ -75,42 +72,9 @@ h4{
     background-color: rgba(0, 0, 0, 0.6);
 }
 
-nav{
-    width: 80px;
-    height: 100%;
-    background-color: #f2dfd3;
-    padding: 40px 0px 40px 1%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    overflow: hidden;
-    transition: .5s;
-}
-
-nav.menu.expandir{
-    width: 300px;
-}
-
-.menu-lateral{
-    width: 100%;
-    padding-left: 10px;
-}
-
-.menu-lateral > i{
-    color: #964b00;
-    font-size: 24px;
-    cursor: pointer;
-}
-
-footer{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
 @media screen and (max-width: 768px){
     p{
-        margin-right: 10%;
-        margin-left: 10%;
+        margin-right: 25%;
+        margin-left: 25%;
     }
 }

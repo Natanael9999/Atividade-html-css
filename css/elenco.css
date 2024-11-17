@@ -1,23 +1,32 @@
 body{
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
     background-color: #E8F1F2;
     background-image: url(../1200x675.jpg);
     background-size: cover;
 }
 
+.elenco{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.atores{
+    display: flex;
+    flex-direction: row;
+    border: 10px;
+    display: block;
+}
+
 p{
-    margin-right: 30%;
-    margin-left: 30%;
+    margin-right: 400px;
+    margin-left: 400px;
     margin-top: 50px;
     align-items: center;
     justify-content: center;
     color: #FFFFFF
-}
-
-figure{
-    margin-right: 400px;
-    margin-left: 400px;
 }
 
 h2{
@@ -62,8 +71,6 @@ h1{
 
 main{
     background-color: rgba(0, 0, 0, 0.6);
-    align-items: center;
-    justify-content: center;
 }
 
 figcaption{
@@ -73,6 +80,13 @@ figcaption{
 h4{
     color: #FFFFFF;
     background-color: rgba(0, 0, 0, 0.6);
+}
+
+.img{
+    max-width: 200px;
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 100%;
 }
 
 nav{
@@ -102,15 +116,13 @@ nav.menu.expandir{
     cursor: pointer;
 }
 
-footer{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
 @media screen and (max-width: 768px){
-    p{
-        margin-right: 10%;
-        margin-left: 10%;
+    .img{
+        max-width: 100px;
+        max-height: 100px;
+    }
+
+    .elenco{
+        grid-template-columns: repeat(1, 1fr);
     }
 }
