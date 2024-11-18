@@ -21,8 +21,8 @@ figure{
 }
 
 h2{
-    margin-right: 400px;
-    margin-left: 400px;
+    margin-right: 30%;
+    margin-left: 30%;
     color: #FFFFFF;
     display: flex;
     justify-content: center;
@@ -112,5 +112,18 @@ footer{
     p{
         margin-right: 10%;
         margin-left: 10%;
+    }
+
+    nav{
+        width: 10%;
+        height: 2%;
+    }
+
+    nav.menu.expandir{
+        height: 100%;
+    }
+
+    main{
+        margin-top: 20%;
     }
 }
